@@ -1,11 +1,11 @@
 import React from 'react';
-import Hero from 'components/Hero';
-import './App.css';
+import NavigationBar from 'components/NavigationBar';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <Hero />
+      <NavigationBar />
     </div>
   );
 }
