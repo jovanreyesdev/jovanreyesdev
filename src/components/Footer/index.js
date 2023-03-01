@@ -19,7 +19,7 @@ function Footer() {
         <Row>
           <Col md={6} className="justify-content-center">
             <h3 className="mb-5 text-center lh-base">
-              Let's make something new,
+              Let&apos;s make something new,
               <br />
               different and more meaningful
               <br />
@@ -71,7 +71,10 @@ function Footer() {
         </Row>
         <Row>
           <Col className="text-center" style={{ marginTop: '5rem' }}>
-            <span>Copyright © 2023 JovanR Portfolios, All rights Reserved.</span>
+            <span>
+              Copyright © 2023 JovanR Portfolios, All rights
+              Reserved.
+            </span>
             <br />
             <span>
               Created by
