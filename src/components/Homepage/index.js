@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
@@ -8,10 +8,8 @@ import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
-import RadialGradient from 'components/RadialGradient';
 import Portrait from 'assets/images/jovanportraitbrush.png';
 import BeachShot from 'assets/images/jovanbeach.png';
-import Jovan from 'assets/images/portrait.jpg';
 import Avatar1 from 'assets/images/avatars/avatar1.webp';
 import Avatar2 from 'assets/images/avatars/avatar2.webp';
 import Avatar3 from 'assets/images/avatars/avatar3.webp';
@@ -22,16 +20,20 @@ function Homepage() {
   const services = ['Web Development', 'Video Editing', 'Photography'];
 
   return (
-    <>
     <div>
       <Container>
         <Row className="pb-5">
           <Col md={5} className="align-self-center">
             <h1 className="herotitle mb-5">
-              <span className="d-block mb-3">Hello! I am <span className="bluetext">Jovan</span></span>
+              <span className="d-block mb-3">
+                Hello! I am
+                <span className="bluetext">Jovan</span>
+              </span>
               <span className="gloock">
-                Professional<br/>
-                UI/UX Designer<br/>
+                Professional
+                <br />
+                UI/UX Designer
+                <br />
                 & Web Developer
               </span>
             </h1>
@@ -59,13 +61,13 @@ function Homepage() {
           </Col>
           {
             services.map((service) => (
-              <Col md={4}>
+              <Col key={service} md={4}>
                 <Card className="m-auto service-card" bg="light" text="dark">
                   <Card.Body>
                     <Card.Title>{service}</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
+                      Some quick example text to build on the card title
+                      and make up the bulk of the card&apos;s content.
                     </Card.Text>
                     <Button size="sm" variant="link">Preview output</Button>
                   </Card.Body>
@@ -91,12 +93,21 @@ function Homepage() {
           </Col>
           <Col className="d-flex justify-content-center" md={7}>
             <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi nullam vehicula ipsum a arcu. Elementum tempus egestas sed sed risus pretium quam vulputate. Massa eget egestas purus viverra accumsan in.
-              <br/>
-              <br/>
-              Lacus laoreet non curabitur gravida arcu ac. A diam sollicitudin tempor id eu nisl nunc mi ipsum. In fermentum et sollicitudin ac orci phasellus egestas tellus. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Tempus quam pellentesque nec nam aliquam sem et tortor. Ornare arcu odio ut sem nulla pharetra diam.
-              <br/>
-              <br/>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Facilisi nullam vehicula ipsum a arcu. Elementum tempus egestas
+              sed sed risus pretium quam vulputate. Massa eget egestas purus
+              viverra accumsan in.
+              <br />
+              <br />
+              Lacus laoreet non curabitur gravida arcu ac. A diam sollicitudin
+              tempor id eu nisl nunc mi ipsum. In fermentum et sollicitudin ac
+              orci phasellus egestas tellus. Facilisi morbi tempus iaculis urna
+              id volutpat lacus laoreet non. Tempus quam pellentesque nec nam
+              aliquam sem et tortor. Ornare arcu odio ut sem nulla pharetra
+              diam.
+              <br />
+              <br />
               - J
             </div>
           </Col>
@@ -117,7 +128,9 @@ function Homepage() {
                 <Card.Text className="fas-6">
                   <FontAwesomeIcon icon={faQuoteLeft} />
                   &nbsp;
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minus et deleniti nesciunt sint eligendi reprehenderit
+                  reiciendis.
                 </Card.Text>
               </Card.Body>
               <div className="bg zigzagbg" />
@@ -132,7 +145,9 @@ function Homepage() {
                 <Card.Text className="fas-6">
                   <FontAwesomeIcon icon={faQuoteLeft} />
                   &nbsp;
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minus et deleniti nesciunt sint eligendi reprehenderit
+                  reiciendis.
                 </Card.Text>
               </Card.Body>
               <div className="bg zigzagbg" />
@@ -147,7 +162,9 @@ function Homepage() {
                 <Card.Text className="fas-6">
                   <FontAwesomeIcon icon={faQuoteLeft} />
                   &nbsp;
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minus et deleniti nesciunt sint eligendi reprehenderit
+                  reiciendis.
                 </Card.Text>
               </Card.Body>
               <div className="bg zigzagbg" />
@@ -156,7 +173,6 @@ function Homepage() {
         </Row>
       </Container>
     </div>
-    </>
   );
 }
 

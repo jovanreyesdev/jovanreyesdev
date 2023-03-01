@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './RadialGradient.module.scss';
 
-function RadialGradient () {
+function RadialGradient() {
   const settings = [
     { x: 40, y: 20, hex: '#9EE362' },
     { x: 100, y: 80, hex: '#444bf7' },
@@ -18,14 +18,15 @@ function RadialGradient () {
 
   return settings.map((s) => (
     <div
+      key={`${s.x} ${s.y}`}
       style={{
-        left: s.y + '%',
-        top: s.x + '%',
+        left: `${s.y}%`,
+        top: `${s.x}%`,
         background: `radial-gradient(circle at 50% 50%, ${s.hex}, #444bf700)`,
       }}
       className={styles.radialGradientObject}
     />
-  ))
+  ));
 }
 
 export default RadialGradient;

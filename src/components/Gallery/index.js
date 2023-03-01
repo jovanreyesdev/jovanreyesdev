@@ -35,7 +35,7 @@ function Gallery() {
           <div className="photo-display" style={{ backgroundImage: `url(${Photo6})` }} />
         </div>
       </div>
-      <a href="https://www.instagram.com/jovanrdr" target="_blank">View more</a>
+      <a href="https://www.instagram.com/jovanrdr" target="_blank" rel="noreferrer">View more</a>
     </div>
   );
 }

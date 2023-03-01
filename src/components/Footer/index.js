@@ -12,17 +12,22 @@ import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-
 
 import './index.scss';
 
-const Footer = () => {
+function Footer() {
   return (
     <footer className="footer pb-5">
       <Container>
         <Row>
           <Col md={6} className="justify-content-center">
             <h3 className="mb-5 text-center lh-base">
-              Let's make something new,<br/>
-              different and more meaningful<br/>
-              or make things more visual<br/>
-              or conceptual? <b>Just say Hello!</b>
+              Let's make something new,
+              <br />
+              different and more meaningful
+              <br />
+              or make things more visual
+              <br />
+              or conceptual?
+              {' '}
+              <b>Just say Hello!</b>
             </h3>
             <ListGroup className="mx-auto mt-0 mb-3" style={{ width: '20rem' }}>
               <ListGroup.Item>+639 69 409 5699</ListGroup.Item>
@@ -67,13 +72,16 @@ const Footer = () => {
         <Row>
           <Col className="text-center" style={{ marginTop: '5rem' }}>
             <span>Copyright © 2023 JovanR Portfolios, All rights Reserved.</span>
-            <br/>
-            <span>Created by <b>jovanreyesdev</b></span>
+            <br />
+            <span>
+              Created by
+              <b>jovanreyesdev</b>
+            </span>
           </Col>
         </Row>
       </Container>
     </footer>
   );
-};
+}
 
 export default Footer;
