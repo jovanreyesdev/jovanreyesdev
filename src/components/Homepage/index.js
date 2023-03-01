@@ -1,117 +1,162 @@
 import React, { Fragment } from 'react';
-import Icon from '@mdi/react';
-import {
-  mdiInstagram,
-  mdiCameraOutline,
-  mdiDivingSnorkel,
-  mdiCoffeeOutline,
-  mdiGamepadSquareOutline,
-  mdiHeadphones,
-} from '@mdi/js';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
-import Gallery from 'components/Gallery';
+import RadialGradient from 'components/RadialGradient';
+import Portrait from 'assets/images/jovanportraitbrush.png';
+import BeachShot from 'assets/images/jovanbeach.png';
+import Jovan from 'assets/images/portrait.jpg';
+import Avatar1 from 'assets/images/avatars/avatar1.webp';
+import Avatar2 from 'assets/images/avatars/avatar2.webp';
+import Avatar3 from 'assets/images/avatars/avatar3.webp';
 
 import './index.scss';
 
 function Homepage() {
+  const services = ['Web Development', 'Video Editing', 'Photography'];
+
   return (
-    <Fragment>
-      <Gallery />
-      <div className="biography">
-        <div>
-        <h1>My Biography</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book. It has survived not
-          only five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s
-          with the release of Letraset sheets containing Lorem Ipsum passages,
-          and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum.
-        </p>
-        </div>
-        <div className="d-flex">
-          <div className="personal-details">
-            <div className="subheader">Personal Details</div>
-              <ul>
-                <li>
-                  <div className="label">Birthdate</div>
-                  <span className="value">01-20-1998</span>
-                </li>
-                <li>
-                  <div className="label">Phone</div>
-                  <span className="value">09694095699</span>
-                </li>
-                <li>
-                  <div className="label">Email</div>
-                  <span className="value">jovan.reyes.dev@gmail.com</span>
-                </li>
-                <li>
-                  <div className="label">Address</div>
-                  <span className="value">Cebu, PH</span>
-                </li>
-              </ul>
-          </div>
-          <div className="interests">
-          <div className="subheader">Interests</div>
-          <div className="items">
-            <div className="item">
-              <Icon path={mdiInstagram} />
-              <span className="label">
-                Coding
+    <>
+    <div>
+      <Container>
+        <Row className="pb-5">
+          <Col md={5} className="align-self-center">
+            <h1 className="herotitle mb-5">
+              <span className="d-block mb-3">Hello! I am <span className="bluetext">Jovan</span></span>
+              <span className="gloock">
+                Professional<br/>
+                UI/UX Designer<br/>
+                & Web Developer
               </span>
+            </h1>
+            <Button
+              size="lg"
+              variant="primary"
+            >
+              Contact me
+            </Button>
+          </Col>
+          <Col md={7}>
+            <Image
+              alt="Portrait"
+              src={Portrait}
+              className="portrait"
+            />
+          </Col>
+        </Row>
+        <Row className="pb-5">
+          <Col md={12} className="justify-content-center mb-5">
+            <span className="d-block text-center">MY SERVICES &</span>
+            <h2 className="text-center fw-bold">
+              Expertise Area
+            </h2>
+          </Col>
+          {
+            services.map((service) => (
+              <Col md={4}>
+                <Card className="m-auto service-card" bg="light" text="dark">
+                  <Card.Body>
+                    <Card.Title>{service}</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the
+                      bulk of the card's content.
+                    </Card.Text>
+                    <Button size="sm" variant="link">Preview output</Button>
+                  </Card.Body>
+                  <div className="bg zigzagbg" />
+                </Card>
+              </Col>
+            ))
+          }
+        </Row>
+        <Row className="pt-5 pb-5">
+          <Col md={12} className="justify-content-center mb-5">
+            <span className="d-block text-center">ABOUT ME &</span>
+            <h2 className="text-center fw-bold">
+              About the things I do
+            </h2>
+          </Col>
+          <Col className="position-relative d-flex align-items-center justify-content-center" md={5} style={{ height: '250px' }}>
+            <Image
+              alt="Jovan in beach"
+              src={BeachShot}
+              className="beachshot"
+            />
+          </Col>
+          <Col className="d-flex justify-content-center" md={7}>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi nullam vehicula ipsum a arcu. Elementum tempus egestas sed sed risus pretium quam vulputate. Massa eget egestas purus viverra accumsan in.
+              <br/>
+              <br/>
+              Lacus laoreet non curabitur gravida arcu ac. A diam sollicitudin tempor id eu nisl nunc mi ipsum. In fermentum et sollicitudin ac orci phasellus egestas tellus. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Tempus quam pellentesque nec nam aliquam sem et tortor. Ornare arcu odio ut sem nulla pharetra diam.
+              <br/>
+              <br/>
+              - J
             </div>
-            <div className="item">
-              <Icon path={mdiCameraOutline} />
-              <span className="label">
-                Photography
-              </span>
-            </div>
-            <div className="item">
-              <Icon path={mdiDivingSnorkel} />
-              <span className="label">
-                Freediving
-              </span>
-            </div>
-            <div className="item">
-              <Icon path={mdiCoffeeOutline} />
-              <span className="label">
-                Coffee
-              </span>
-            </div>
-            <div className="item">
-              <Icon path={mdiGamepadSquareOutline} />
-              <span className="label">
-                Gaming
-              </span>
-            </div>
-            <div className="item">
-              <Icon path={mdiHeadphones} />
-              <span className="label">
-                Music
-              </span>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-      {/* <div className="stats">
-        <h1>My Stats</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book. It has survived not
-          only five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s
-          with the release of Letraset sheets containing Lorem Ipsum passages,
-          and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div> */}
-    </Fragment>
+          </Col>
+        </Row>
+        <Row className="pt-5 pb-5">
+          <Col md={12} className="justify-content-center mb-5">
+            <span className="d-block text-center">Client Review &</span>
+            <h2 className="text-center fw-bold">
+              What they say
+            </h2>
+          </Col>
+          <Col md={4}>
+            <Card className="m-auto service-card mt-5" bg="light" text="dark">
+              <Card.Body>
+                <Image className="d-block m-auto mb-3" width="120px" src={Avatar1} roundedCircle />
+                <Card.Title className="m-0 text-center">Maria Kate</Card.Title>
+                <Card.Subtitle className="mt-0 mb-4 fas-6 text-muted text-center">Photographer</Card.Subtitle>
+                <Card.Text className="fas-6">
+                  <FontAwesomeIcon icon={faQuoteLeft} />
+                  &nbsp;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis.
+                </Card.Text>
+              </Card.Body>
+              <div className="bg zigzagbg" />
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card className="m-auto service-card center-card" bg="light" text="dark">
+              <Card.Body>
+                <Image className="d-block m-auto mb-3" width="120px" src={Avatar2} roundedCircle />
+                <Card.Title className="m-0 text-center">John Doe</Card.Title>
+                <Card.Subtitle className="mt-0 mb-4 fas-6 text-muted text-center">Web Developer</Card.Subtitle>
+                <Card.Text className="fas-6">
+                  <FontAwesomeIcon icon={faQuoteLeft} />
+                  &nbsp;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis.
+                </Card.Text>
+              </Card.Body>
+              <div className="bg zigzagbg" />
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card className="m-auto service-card mt-5" bg="light" text="dark">
+              <Card.Body>
+                <Image className="d-block m-auto mb-3" width="120px" src={Avatar3} roundedCircle />
+                <Card.Title className="m-0 text-center">Anna Deynah</Card.Title>
+                <Card.Subtitle className="mt-0 mb-4 fas-6 text-muted text-center">UX Designer</Card.Subtitle>
+                <Card.Text className="fas-6">
+                  <FontAwesomeIcon icon={faQuoteLeft} />
+                  &nbsp;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis.
+                </Card.Text>
+              </Card.Body>
+              <div className="bg zigzagbg" />
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+    </>
   );
 }
 

@@ -84,7 +84,7 @@ $social-colors: (
 
 ////////// FONTS//
 
-$type1: 'Rubik', sans-serif;
+$type1: 'Montserrat', sans-serif;
 
 $font-weight-light: 300;
 $font-weight-medium: 500;
@@ -93,7 +93,7 @@ $font-weight-bold: 700;
 $default-font-size: .875rem; // 14px as base font size
 
 $text-muted: #6c7293;
-$body-color: #000;
+$body-color: #464b5d;
 
 ////////// FONT VARIABLES //////////
 
@@ -211,7 +211,7 @@ $popover-header-bg: $popover-bg;
 
 /////////  FORMS /////////
 
-$input-bg: #2A3038;
+$input-bg: $content-bg;
 $input-border-radius: 2px;
 $input-border-color: $border-color;
 $input-placeholder-color: lighten($input-bg, 15%);
