@@ -14,6 +14,12 @@ import Avatar1 from 'assets/images/avatars/avatar1.webp';
 import Avatar2 from 'assets/images/avatars/avatar2.webp';
 import Avatar3 from 'assets/images/avatars/avatar3.webp';
 
+import Lear from 'assets/images/clients/lear.png';
+import Merck from 'assets/images/clients/merck.png';
+import Smartbag from 'assets/images/clients/smartbag.png';
+import Maxicare from 'assets/images/clients/maxicare.png';
+import _1800a from 'assets/images/clients/1800accountant.png';
+
 import './index.scss';
 
 function Homepage() {
@@ -26,7 +32,7 @@ function Homepage() {
           <Col md={5} className="align-self-center">
             <h1 className="herotitle mb-5">
               <span className="d-block mb-3">
-                Hello! I am
+                Hello! I am&nbsp;
                 <span className="bluetext">Jovan</span>
               </span>
               <span className="gloock">
@@ -62,20 +68,27 @@ function Homepage() {
           {
             services.map((service) => (
               <Col key={service} md={4}>
-                <Card className="m-auto service-card" bg="light" text="dark">
-                  <Card.Body>
-                    <Card.Title>{service}</Card.Title>
+                <Card className="m-auto" style={{ border: 0 }}>
+                  <Card.Body className="text-center">
+                    <Card.Title className="fw-bold">{service}</Card.Title>
                     <Card.Text>
                       Some quick example text to build on the card title
                       and make up the bulk of the card&apos;s content.
                     </Card.Text>
-                    <Button size="sm" variant="link">Preview output</Button>
                   </Card.Body>
-                  <div className="bg zigzagbg" />
                 </Card>
               </Col>
             ))
           }
+        </Row>
+        <Row className="pb-5">
+          <Col md={12} className="d-flex justify-content-between align-items-center">
+            <Image width="150px" alt="Lear Logo" src={Lear} />
+            <Image width="150px" alt="Merck Logo" src={Merck} />
+            <Image width="150px" alt="Smartbag Logo" src={Smartbag} />
+            <Image width="150px" alt="Maxicare Logo" src={Maxicare} />
+            <Image width="150px" alt="1800Accountant Logo" src={_1800a} />
+          </Col>
         </Row>
         <Row className="pt-5 pb-5">
           <Col md={12} className="justify-content-center mb-5">

@@ -72,12 +72,12 @@ function Footer() {
         <Row>
           <Col className="text-center" style={{ marginTop: '5rem' }}>
             <span>
-              Copyright © 2023 JovanR Portfolios, All rights
+              Copyright © 2023 JovanR Portfolios, All rights&nbsp;
               Reserved.
             </span>
             <br />
             <span>
-              Created by
+              Created by&nbsp;
               <b>jovanreyesdev</b>
             </span>
           </Col>
