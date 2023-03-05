@@ -28,7 +28,7 @@ function Homepage() {
   return (
     <div>
       <Container>
-        <Row className="pb-5">
+        <Row className="pb-5 pt-5 pt-xl-0">
           <Col md={5} className="align-self-center">
             <h1 className="herotitle mb-5">
               <span className="d-block mb-3">
@@ -50,7 +50,7 @@ function Homepage() {
               Contact me
             </Button>
           </Col>
-          <Col md={7}>
+          <Col md={7} className="d-lg-block d-flex align-items-center justify-content-center">
             <Image
               alt="Portrait"
               src={Portrait}
@@ -68,7 +68,7 @@ function Homepage() {
           {
             services.map((service) => (
               <Col key={service} md={4}>
-                <Card className="m-auto" style={{ border: 0 }}>
+                <Card className="mx-auto mb-3 mb-md-0" style={{ border: 0 }}>
                   <Card.Body className="text-center">
                     <Card.Title className="fw-bold">{service}</Card.Title>
                     <Card.Text>
@@ -82,29 +82,29 @@ function Homepage() {
           }
         </Row>
         <Row className="pb-5">
-          <Col md={12} className="d-flex justify-content-between align-items-center">
-            <Image width="150px" alt="Lear Logo" src={Lear} />
-            <Image width="150px" alt="Merck Logo" src={Merck} />
-            <Image width="150px" alt="Smartbag Logo" src={Smartbag} />
-            <Image width="150px" alt="Maxicare Logo" src={Maxicare} />
-            <Image width="150px" alt="1800Accountant Logo" src={_1800a} />
+          <Col md={12} className="d-flex flex-column flex-lg-row justify-content-between align-items-center col-md-12">
+            <Image className="my-4 my-lg-0" width="150px" alt="Lear Logo" src={Lear} />
+            <Image className="my-4 my-lg-0" width="150px" alt="Merck Logo" src={Merck} />
+            <Image className="my-4 my-lg-0" width="150px" alt="Smartbag Logo" src={Smartbag} />
+            <Image className="my-4 my-lg-0" width="150px" alt="Maxicare Logo" src={Maxicare} />
+            <Image className="my-4 my-lg-0" width="150px" alt="1800Accountant Logo" src={_1800a} />
           </Col>
         </Row>
         <Row className="pt-5 pb-5">
-          <Col md={12} className="justify-content-center mb-5">
+          <Col md={12} className="justify-content-center mb-md-3 mb-lg-5 col-md-12">
             <span className="d-block text-center">ABOUT ME &</span>
             <h2 className="text-center fw-bold">
               About the things I do
             </h2>
           </Col>
-          <Col className="position-relative d-flex align-items-center justify-content-center" md={5} style={{ height: '250px' }}>
+          <Col className="position-relative my-5 my-md-0 d-flex align-items-center justify-content-center beachshot-container" md={6} lg={5}>
             <Image
               alt="Jovan in beach"
               src={BeachShot}
               className="beachshot"
             />
           </Col>
-          <Col className="d-flex justify-content-center" md={7}>
+          <Col className="d-flex justify-content-center" md={6} lg={7}>
             <div>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -133,9 +133,9 @@ function Homepage() {
             </h2>
           </Col>
           <Col md={4}>
-            <Card className="m-auto service-card mt-5" bg="light" text="dark">
+            <Card className="m-auto testimonial-card mt-md-3 mb-3" bg="light" text="dark">
               <Card.Body>
-                <Image className="d-block m-auto mb-3" width="120px" src={Avatar1} roundedCircle />
+                <Image className="avatar d-block m-auto mb-3" src={Avatar1} roundedCircle />
                 <Card.Title className="m-0 text-center">Maria Kate</Card.Title>
                 <Card.Subtitle className="mt-0 mb-4 fas-6 text-muted text-center">Photographer</Card.Subtitle>
                 <Card.Text className="fas-6">
@@ -150,9 +150,9 @@ function Homepage() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="m-auto service-card center-card" bg="light" text="dark">
+            <Card className="m-auto testimonial-card center-card mb-3" bg="light" text="dark">
               <Card.Body>
-                <Image className="d-block m-auto mb-3" width="120px" src={Avatar2} roundedCircle />
+                <Image className="avatar d-block m-auto mb-3" src={Avatar2} roundedCircle />
                 <Card.Title className="m-0 text-center">John Doe</Card.Title>
                 <Card.Subtitle className="mt-0 mb-4 fas-6 text-muted text-center">Web Developer</Card.Subtitle>
                 <Card.Text className="fas-6">
@@ -167,9 +167,9 @@ function Homepage() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="m-auto service-card mt-5" bg="light" text="dark">
+            <Card className="m-auto testimonial-card mt-md-3 mb-3" bg="light" text="dark">
               <Card.Body>
-                <Image className="d-block m-auto mb-3" width="120px" src={Avatar3} roundedCircle />
+                <Image className="avatar d-block m-auto mb-3" src={Avatar3} roundedCircle />
                 <Card.Title className="m-0 text-center">Anna Deynah</Card.Title>
                 <Card.Subtitle className="mt-0 mb-4 fas-6 text-muted text-center">UX Designer</Card.Subtitle>
                 <Card.Text className="fas-6">

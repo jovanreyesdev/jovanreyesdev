@@ -8,11 +8,24 @@
 }
 
 .portrait {
-  max-width: 750px;
+  max-width: 480px;
+
+  @media (min-width: 768px) {
+    max-width: 750px;
+    z-index: -1;
+  }
 }
 
-.beachshot {
-  max-width: 300px;
+.beachshot-container {
+  height: 450px;
+
+  @media (min-width: 992px) {
+    height: 250px;
+  }
+
+  .beachshot {
+    max-width: 300px;
+  }
 }
 
 .top-home-bg {
@@ -23,13 +36,28 @@
   border: 0px;
   box-shadow: 0 19px 38px rgb(0 0 0 / 5%), 0 15px 12px rgb(0 0 0 / 5%);
 
-  &.center-card {
-    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 0%);
-  }
-
   .card-title {
     color: #303538;
     font-weight: bold;
+  }
+}
+
+.testimonial-card.card {
+  border: 0px;
+  box-shadow: 0 19px 38px rgb(0 0 0 / 5%), 0 15px 12px rgb(0 0 0 / 5%);
+
+  &.center-card {
+    @media (min-width: 768px) {
+      box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 0%);
+    }
+  }
+
+  .avatar {
+    width: 70px;
+
+    @media (min-width: 992px) {
+      width: 120px;
+    }
   }
 }
 
