@@ -99,16 +99,29 @@ function Homepage() {
           </Col>
           <Col className="d-flex justify-content-center" md={6} lg={7}>
             <div>
-              I'm a software engineer with a passion for coding. I love to spend my free time tinkering with new technologies and building applications that solve real-world problems.
+              I&apos;m a software engineer with a passion for coding.
+              I love to spend my free time tinkering with new technologies
+              and building applications that solve real-world problems.
               <br />
               <br />
-              Ever since I was a kid, I've been fascinated by the power of computers and the endless possibilities they offer. Over the years, I've honed my skills and gained experience in a variety of programming languages and frameworks, including Java, Python, and React.
+              Ever since I was a kid, I&apos;ve been fascinated by the power of
+              computers and the endless possibilities they offer. Over the
+              years, I&apos;ve honed my skills and gained experience in a
+              variety of programming languages and frameworks, including
+              Java, Python, and React.
               <br />
               <br />
-              While my professional work keeps me busy, I always make time for my hobby projects. I find that coding is a great way to unwind and explore new ideas, and I'm constantly learning new things as I work on personal projects.
+              While my professional work keeps me busy, I always make time
+              for my hobby projects. I find that coding is a great way
+              to unwind and explore new ideas, and I&apos;m constantly
+              learning new things as I work on personal projects.
               <br />
               <br />
-              When I'm not coding, you can find me hiking in the great outdoors or freediving in the deep blue sea. I'm always up for a good challenge, whether it's a tough coding problem or a new adventure. I'm excited to see where my passion for coding takes me next!
+              When I&apos;m not coding, you can find me hiking in the
+              great outdoors or freediving in the deep blue sea.
+              I&apos;m always up for a good challenge, whether
+              it&apos;s a tough coding problem or a new adventure.
+              I&apos;m excited to see where my passion for coding takes me next!
               <br />
               <br />
               - J
