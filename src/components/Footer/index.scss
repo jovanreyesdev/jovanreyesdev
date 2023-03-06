@@ -2,8 +2,25 @@ footer.footer {
   background: linear-gradient(to bottom, transparent, #e8e4c9);
   padding-top: 10rem;
 
+  .social-list {
+
+    .list-group-item {
+      a {
+        color: #464B5D;
+      }
+
+      &:hover {
+        background: linear-gradient(45deg, #d5c5eb, #f2c1ff, #e7d3ff, #d8e2ff, #c2edff, #c1f1e8, #c9f9cc, #ecf9c9);
+      }
+    }
+  }
+
   .contact-form {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     border: 0;
+
+    #formMessage {
+      min-height: 7rem;
+    }
   }
 }

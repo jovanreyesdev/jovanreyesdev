@@ -30,19 +30,29 @@ function Footer() {
               <b>Just say Hello!</b>
             </h3>
             <ListGroup className="mx-auto mt-0 mb-3" style={{ width: '20rem' }}>
-              <ListGroup.Item>+639 69 409 5699</ListGroup.Item>
-              <ListGroup.Item>jovan.reyes.dev@gmail.com</ListGroup.Item>
+              <ListGroup.Item>
+                <a href="tel:639694095699">+639 69 409 5699</a>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <a href="mailto:jovan.reyes.dev@gmail.com">jovan.reyes.dev@gmail.com</a>
+              </ListGroup.Item>
             </ListGroup>
-            <ListGroup horizontal className="justify-content-center mx-auto my-0">
-              <ListGroup.Item>
-                <FontAwesomeIcon icon={faInstagram} />
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <FontAwesomeIcon icon={faLinkedin} />
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <FontAwesomeIcon icon={faGithub} />
-              </ListGroup.Item>
+            <ListGroup horizontal className="social-list justify-content-center mx-auto my-0">
+              <a href="https://www.linkedin.com/in/jovan-reyes-dev" target="_blank" rel="noreferrer">
+                <ListGroup.Item>
+                  <FontAwesomeIcon icon={faInstagram} />
+                </ListGroup.Item>
+              </a>
+              <a href="https://www.linkedin.com/in/jovan-reyes-dev" target="_blank" rel="noreferrer">
+                <ListGroup.Item>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </ListGroup.Item>
+              </a>
+              <a href="https://github.com/jovanreyesdev" target="_blank" rel="noreferrer">
+                <ListGroup.Item>
+                  <FontAwesomeIcon icon={faGithub} />
+                </ListGroup.Item>
+              </a>
             </ListGroup>
           </Col>
           <Col className="d-flex align-items-center justify-content-center" md={6}>

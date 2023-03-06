@@ -8,6 +8,7 @@ import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
+import { ReactComponent as JRDEVLogo } from 'assets/images/jrdev.svg';
 import Portrait from 'assets/images/jovanportraitbrush.png';
 import BeachShot from 'assets/images/jovanbeach.png';
 import Avatar1 from 'assets/images/avatars/avatar1.webp';
@@ -27,7 +28,8 @@ function Homepage() {
 
   return (
     <div>
-      <Container>
+      <Container className="position-relative">
+        <JRDEVLogo className="jrdev" />
         <Row className="pb-5 pt-5 pt-xl-0">
           <Col md={5} className="align-self-center">
             <h1 className="herotitle mb-5">
@@ -81,15 +83,6 @@ function Homepage() {
             ))
           }
         </Row>
-        <Row className="pb-5">
-          <Col md={12} className="d-flex flex-column flex-lg-row justify-content-between align-items-center col-md-12">
-            <Image className="my-4 my-lg-0" width="150px" alt="Lear Logo" src={Lear} />
-            <Image className="my-4 my-lg-0" width="150px" alt="Merck Logo" src={Merck} />
-            <Image className="my-4 my-lg-0" width="150px" alt="Smartbag Logo" src={Smartbag} />
-            <Image className="my-4 my-lg-0" width="150px" alt="Maxicare Logo" src={Maxicare} />
-            <Image className="my-4 my-lg-0" width="150px" alt="1800Accountant Logo" src={_1800a} />
-          </Col>
-        </Row>
         <Row className="pt-5 pb-5">
           <Col md={12} className="justify-content-center mb-md-3 mb-lg-5 col-md-12">
             <span className="d-block text-center">ABOUT ME &</span>
@@ -106,19 +99,16 @@ function Homepage() {
           </Col>
           <Col className="d-flex justify-content-center" md={6} lg={7}>
             <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Facilisi nullam vehicula ipsum a arcu. Elementum tempus egestas
-              sed sed risus pretium quam vulputate. Massa eget egestas purus
-              viverra accumsan in.
+              I'm a software engineer with a passion for coding. I love to spend my free time tinkering with new technologies and building applications that solve real-world problems.
               <br />
               <br />
-              Lacus laoreet non curabitur gravida arcu ac. A diam sollicitudin
-              tempor id eu nisl nunc mi ipsum. In fermentum et sollicitudin ac
-              orci phasellus egestas tellus. Facilisi morbi tempus iaculis urna
-              id volutpat lacus laoreet non. Tempus quam pellentesque nec nam
-              aliquam sem et tortor. Ornare arcu odio ut sem nulla pharetra
-              diam.
+              Ever since I was a kid, I've been fascinated by the power of computers and the endless possibilities they offer. Over the years, I've honed my skills and gained experience in a variety of programming languages and frameworks, including Java, Python, and React.
+              <br />
+              <br />
+              While my professional work keeps me busy, I always make time for my hobby projects. I find that coding is a great way to unwind and explore new ideas, and I'm constantly learning new things as I work on personal projects.
+              <br />
+              <br />
+              When I'm not coding, you can find me hiking in the great outdoors or freediving in the deep blue sea. I'm always up for a good challenge, whether it's a tough coding problem or a new adventure. I'm excited to see where my passion for coding takes me next!
               <br />
               <br />
               - J
@@ -182,6 +172,15 @@ function Homepage() {
               </Card.Body>
               <div className="bg zigzagbg" />
             </Card>
+          </Col>
+        </Row>
+        <Row className="pb-5">
+          <Col md={12} className="d-flex flex-column flex-lg-row justify-content-between align-items-center col-md-12">
+            <Image className="my-4 my-lg-0" width="150px" alt="Lear Logo" src={Lear} />
+            <Image className="my-4 my-lg-0" width="150px" alt="Merck Logo" src={Merck} />
+            <Image className="my-4 my-lg-0" width="150px" alt="Smartbag Logo" src={Smartbag} />
+            <Image className="my-4 my-lg-0" width="150px" alt="Maxicare Logo" src={Maxicare} />
+            <Image className="my-4 my-lg-0" width="150px" alt="1800Accountant Logo" src={_1800a} />
           </Col>
         </Row>
       </Container>
