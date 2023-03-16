@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 import { ReactComponent as JRDEVLogo } from 'assets/images/jrdev.svg';
+import { ReactComponent as RandomCodes } from 'assets/images/randomcodes.svg';
+import MobileView from 'assets/images/mobileview.png';
 import Portrait from 'assets/images/jovanportraitbrush.png';
 import BeachShot from 'assets/images/jovanbeach.png';
 import Avatar1 from 'assets/images/avatars/avatar1.webp';
@@ -83,6 +85,11 @@ function Homepage() {
             ))
           }
         </Row>
+        <Row>
+          <Col className="d-flex align-items-center justify-content-center">
+            <img src={MobileView} alt="mobile view" style={{ maxWidth: '25rem', filter: 'grayscale(0.5)' }} />
+          </Col>
+        </Row>
         <Row className="pt-5 pb-5">
           <Col md={12} className="justify-content-center mb-md-3 mb-lg-5 col-md-12">
             <span className="d-block text-center">ABOUT ME &</span>
@@ -96,6 +103,7 @@ function Homepage() {
               src={BeachShot}
               className="beachshot"
             />
+            <RandomCodes className="randomcodes" />
           </Col>
           <Col className="d-flex justify-content-center" md={6} lg={7}>
             <div>
