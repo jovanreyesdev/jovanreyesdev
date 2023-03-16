@@ -10,8 +10,6 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <title>JRDev | Portfolio</title>
-        <meta name="description" content="Jovan Porfolio by jovanreyesdev" />
         <meta property="og:image" content={MetaThumbnail} />
       </Helmet>
       <Homepage />
