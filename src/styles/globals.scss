@@ -89,6 +89,7 @@ body {
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+  min-height: 100vh;
 }
 
 a {
@@ -100,7 +101,12 @@ a {
   @apply max-w-containerXl 2xl:max-w-containerXl2 mx-auto mb-20;
 }
 
+.subheading {
+  font-family: 'Jost';
+  @apply text-5xl text-gray-600 mb-10;
+}
+
 .typography {
   font-family: "Open Sans";
-  @apply text-xl text-gray-600;
+  @apply text-xl text-gray-600 mb-5;
 }

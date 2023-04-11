@@ -1,0 +1,18 @@
+.content_area {
+  @apply flex items-center justify-between flex-wrap;
+
+  .box {
+    max-width: 350px;
+    @apply mb-20 text-gray-600;
+
+    .box_title {
+      @apply text-3xl mb-5;
+    }
+    
+    &.techstacks {
+      background: #EBEBEB;
+      height: 14rem;
+      @apply rounded flex items-center mt-3;
+    }
+  }
+}

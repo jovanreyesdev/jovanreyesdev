@@ -20,7 +20,7 @@ function PageHeader() {
           <Button variant="secondary">Get to know more</Button>
         </div>
       </div>
-      <div className={styles.header_content_left}>
+      <div className={styles.header_content_right}>
         <Image
           width={750}
           height={500}
