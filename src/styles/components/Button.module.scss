@@ -1,9 +1,9 @@
 .primary {
   font-family: "Jost";
-  @apply bg-blue-500 text-white py-3 px-4 rounded hover:bg-blue-400;
+  @apply bg-blue-500 text-xl text-white py-3 px-4 rounded hover:bg-blue-400;
 }
 
 .secondary {
   font-family: "Jost";
-  @apply bg-blue-50  text-blue-500 py-3 px-4 rounded hover:bg-blue-400 hover:text-white;
+  @apply bg-blue-50 text-xl  text-blue-500 py-3 px-4 rounded hover:bg-blue-400 hover:text-white;
 }

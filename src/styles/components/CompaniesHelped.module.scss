@@ -1,0 +1,14 @@
+.component {
+  @apply max-w-full;
+
+  .content_area {
+    min-height: 400px;
+    background: #1a8dcb;
+    @apply bg-center bg-cover flex items-center bg-no-repeat;
+
+    .companies {
+      max-width: 1030px;
+      @apply flex items-center justify-between w-full mx-auto;
+    }
+  }
+}
