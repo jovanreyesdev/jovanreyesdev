@@ -1,0 +1,23 @@
+.content_area {
+  @apply text-xl;
+
+  .avatar {
+    background: url(/images/igor.jfif);
+    height: 50px;
+    width: 50px;
+
+    @apply bg-contain rounded-full mx-auto mb-10;
+  }
+
+  .recommendation {
+    @apply text-xl text-gray-600 italic mb-10;
+  }
+
+  .author {
+    @apply text-center;
+  }
+
+  .author_title {
+    @apply text-center text-sm text-gray-400;
+  }
+}

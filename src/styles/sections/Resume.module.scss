@@ -1,9 +1,13 @@
 .content_area {
   max-width: 655px;
-  @apply ml-auto w-full;
+  @apply xl:ml-auto w-full;
 
   .experience_box {
-    @apply flex flex-col 2xl:flex-row text-gray-600 mb-20;
+    @apply flex flex-col 2xl:flex-row text-gray-600;
+
+    &:not(:last-child) {
+      @apply mb-10 xl:mb-20;
+    }
 
     .exp_title {
       font-family: Jost;

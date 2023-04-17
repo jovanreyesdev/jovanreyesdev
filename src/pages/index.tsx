@@ -1,12 +1,15 @@
 import React from "react";
 import Head from "next/head";
 
-import PageHeader from "@/components/PageHeader";
-import About from '@/components/About';
-import WhyMe from '@/components/WhyMe';
-import Resume from '@/components/Resume';
-import Portfolios from '@/components/Portfolios';
-import CompaniesHelped from '@/components/CompaniesHelped';
+import PageHeader from "@/sections/PageHeader";
+import About from '@/sections/About';
+import WhyMe from '@/sections/WhyMe';
+import Resume from '@/sections/Resume';
+import Portfolios from '@/sections/Portfolios';
+import Recommendations from '@/sections/Recommendations';
+import CompaniesHelped from '@/sections/CompaniesHelped';
+import Gallery from '@/sections/Gallery';
+import Footer from '@/sections/Footer';
 
 function Home() {
   return (
@@ -15,8 +18,11 @@ function Home() {
       <About />
       <WhyMe />
       <Resume />
+      <Recommendations />
       <Portfolios />
       <CompaniesHelped />
+      <Gallery />
+      <Footer />
     </main>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import styles from '@/styles/components/CompaniesHelped.module.scss';
+import styles from '@/styles/sections/CompaniesHelped.module.scss';
 
 const IMG_BASE_URL = '/images/companies';
 

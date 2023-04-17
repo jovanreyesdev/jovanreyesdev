@@ -1,12 +1,12 @@
 import React from 'react';
 
-import styles from '@/styles/components/Resume.module.scss';
+import styles from '@/styles/sections/Resume.module.scss';
 
 function Resume() {
 
   return (
-    <div className="container">
-      <div className="flex">
+    <section className="container">
+      <div className="flex flex-col xl:flex-row">
         <h2 className="subheading">Resume</h2>
         <div className={styles.content_area}>
           <div className={styles.experience_box}>
@@ -16,7 +16,7 @@ function Resume() {
                 <div>
                   <span className="font-bold">1800Accountant</span>, New York, USA
                 </div>
-                <div>
+                <div className="hidden xl:block">
                   Jun 2020 - Present
                 </div>
               </div>
@@ -33,7 +33,7 @@ function Resume() {
                 <div>
                   <span className="font-bold">Smartgroup Enterprises</span>, Australia
                 </div>
-                <div>
+                <div className="hidden xl:block">
                   Jan 2019 - Jun 2020
                 </div>
               </div>
@@ -50,7 +50,7 @@ function Resume() {
                 <div>
                   <span className="font-bold">Lear Corporation</span>, Cebu
                 </div>
-                <div>
+                <div className="hidden xl:block">
                   Sep 2017 - Jan 2019
                 </div>
               </div>
@@ -61,7 +61,7 @@ function Resume() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

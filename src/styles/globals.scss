@@ -98,12 +98,34 @@ a {
 }
 
 .container {
-  @apply max-w-containerXl 2xl:max-w-containerXl2 mx-auto mb-20;
+  max-width: 300px;
+
+  @apply mx-auto mb-10 xl:mb-20;
+
+  @media (min-width: 640px) {
+    max-width: 500px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 600px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 900px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1030px;
+  }
+
+  @media (min-width: 1536px) {
+    max-width: 1320px;
+  }
 }
 
 .subheading {
   font-family: 'Jost';
-  @apply text-5xl text-gray-600 mb-10;
+  @apply text-4xl xl:text-5xl text-gray-600 mb-10;
 }
 
 .typography {

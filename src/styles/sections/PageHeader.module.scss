@@ -15,23 +15,27 @@
     }
   }
 
+  .cta {
+    max-width: 200px;
+  }
+
   .header_content_right {
-    @apply justify-self-center relative;
+    @apply hidden lg:block justify-self-center relative;
   }
 
   .heading {
     font-family: "Montserrat", sans-serif;
-    @apply text-4xl text-gray-600 mb-5;
+    @apply text-3xl xl:text-4xl text-gray-600 mb-5;
   }
 
   .subheading {
     font-family: "Gloock";
     max-width: 30rem;
-    @apply text-6xl text-gray-600 leading-tight mb-5;
+    @apply text-4xl xl:text-6xl text-gray-600 leading-tight mb-5;
   }
 
   .social_container {
-    @apply flex flex-col absolute right-0 justify-center items-center top-0 bottom-0;
+    @apply hidden xl:flex flex-col absolute right-0 justify-center items-center top-0 bottom-0;
 
     .social_icon {
       height: 2rem;

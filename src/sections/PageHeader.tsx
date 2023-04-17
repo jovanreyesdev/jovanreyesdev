@@ -4,7 +4,7 @@ import { ReactSVG } from "react-svg";
 
 import Button from "@/components/Button";
 
-import styles from "@/styles/components/PageHeader.module.scss";
+import styles from "@/styles/sections/PageHeader.module.scss";
 
 function PageHeader() {
   return (
@@ -15,9 +15,9 @@ function PageHeader() {
         <h2 className={styles.subheading}>
           Professional UI/UX Designer & Web Developer
         </h2>
-        <div>
-          <Button className="mr-5">Contact Me</Button>
-          <Button variant="secondary">Get to know more</Button>
+        <div className="flex flex-col xl:flex-row">
+          <Button className={`${styles.cta} mb-10 xl:mb-0 xl:mr-5`}>Contact Me</Button>
+          <Button className={`${styles.cta} hidden xl:inline`} variant="secondary">Get to know more</Button>
         </div>
       </div>
       <div className={styles.header_content_right}>
