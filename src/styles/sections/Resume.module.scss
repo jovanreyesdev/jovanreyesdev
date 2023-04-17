@@ -1,0 +1,31 @@
+.content_area {
+  max-width: 655px;
+  @apply xl:ml-auto w-full;
+
+  .experience_box {
+    @apply flex flex-col 2xl:flex-row text-gray-600;
+
+    &:not(:last-child) {
+      @apply mb-10 xl:mb-20;
+    }
+
+    .exp_title {
+      font-family: Jost;
+      @apply text-3xl text-blue-600 mb-3;
+    }
+
+    .exp_details {
+      @apply flex-1 text-xl;
+    }
+  }
+
+  // 2xl
+  @media (min-width: 1536px) {
+    max-width: 830px;
+
+    .exp_details {
+      max-width: 500px;
+      margin-left: auto;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.pageheader {
+  @apply flex justify-between pt-5;
+
+  .header_content_left {
+    min-width: 30rem;
+    @apply self-center relative;
+
+    .background_brand {
+      z-index: -1;
+      opacity: 0.1;
+      left: 6rem;
+      top: 6rem;
+      transform: scale(3);
+      @apply absolute;
+    }
+  }
+
+  .cta {
+    max-width: 200px;
+  }
+
+  .header_content_right {
+    @apply hidden lg:block justify-self-center relative;
+  }
+
+  .heading {
+    font-family: "Montserrat", sans-serif;
+    @apply text-3xl xl:text-4xl text-gray-600 mb-5;
+  }
+
+  .subheading {
+    font-family: "Gloock";
+    max-width: 30rem;
+    @apply text-4xl xl:text-6xl text-gray-600 leading-tight mb-5;
+  }
+
+  .social_container {
+    @apply hidden xl:flex flex-col absolute right-0 justify-center items-center top-0 bottom-0;
+
+    .social_icon {
+      height: 2rem;
+      width: 2rem;
+      @apply text-blue-500;
+    }
+
+    .separator {
+      width: 0.25rem;
+      height: 5rem;
+      @apply bg-gray-400 my-5;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.content_area {
+  .gallery_images {
+    max-width: 1190px;
+    @apply flex flex-wrap mt-20 justify-around;
+  }
+}

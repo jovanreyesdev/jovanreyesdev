@@ -1,0 +1,19 @@
+.component {
+  @apply max-w-full;
+
+  .content_area {
+    min-height: 400px;
+    background: #1a8dcb;
+    background-image: url(/images/pattern.png);
+    @apply bg-center flex items-center relative;
+
+    .companies {
+      max-width: 1030px;
+      @apply flex flex-col xl:flex-row items-center justify-between w-full mx-auto;
+
+      img {
+        @apply my-10;
+      }
+    }
+  }
+}
