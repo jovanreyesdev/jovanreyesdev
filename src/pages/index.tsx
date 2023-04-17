@@ -14,6 +14,9 @@ import Footer from '@/sections/Footer';
 function Home() {
   return (
     <main>
+      <Head>
+        <title>Jovan Reyes | Personal Site</title>
+      </Head>
       <PageHeader />
       <About />
       <WhyMe />
