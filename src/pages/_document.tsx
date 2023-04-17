@@ -7,9 +7,9 @@ export default function Document() {
       <meta name="description" content="Personal Site | Jovan Reyes" />
 
       {/* <!-- Google / Search Engine Tags --> */}
-      <meta itemprop="name" content="Jovan Reyes" />
-      <meta itemprop="description" content="Personal Site | Jovan Reyes" />
-      <meta itemprop="image" content="https://lh3.google.com/u/0/d/1pnBN91NTydTRBzbFaDEgnDFj_Z9YdD8z=w1920-h901-iv1" />
+      <meta itemProp="name" content="Jovan Reyes" />
+      <meta itemProp="description" content="Personal Site | Jovan Reyes" />
+      <meta itemProp="image" content="https://lh3.google.com/u/0/d/1pnBN91NTydTRBzbFaDEgnDFj_Z9YdD8z=w1920-h901-iv1" />
 
       {/* <!-- Facebook Meta Tags --> */}
       <meta property="og:url" content="https://jovanreyesdev.netlify.app" />
