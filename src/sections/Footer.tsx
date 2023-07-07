@@ -6,46 +6,29 @@ import styles from '@/styles/sections/Footer.module.scss';
 
 function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div className={`container ${styles.content_area}`}>
-        <div className="flex flex-col sm:flex-row justify-between">
-          <div className="flex">
-            <div>
-              <ReactSVG src="/images/jrdevlogo.svg" className={styles.logo} />
-              <div className="mb-4">
+        <div className="flex flex-col justify-between">
+          <div className="flex items-center justify-center">
+            <img src="/images/footer-line.png" alt="line" />
+            <div className="px-10">
+              <ReactSVG src="/images/jrdevlogo-white.svg" className={styles.logo} />
+              <div className="mb-4 text-center">
                 <div>Jovan Reyes</div>
                 <div className="text-xs italic">Software Developer</div>
               </div>
-              <div className={styles.social_icons}>
-                <ReactSVG src="/images/insta.svg" />
-                <ReactSVG src="/images/linkedin.svg" />
-                <ReactSVG src="/images/github.svg" />
-              </div>
-              <div>
-                <Button>Contact me</Button>
-              </div>
+            </div>
+            <img src="/images/footer-line.png" alt="line" />
+          </div>
+          <div className="flex justify-center">
+            <div className={styles.social_icons}>
+              <ReactSVG src="/images/insta.svg" />
+              <ReactSVG src="/images/linkedin.svg" />
+              <ReactSVG src="/images/github.svg" />
             </div>
           </div>
-          <div className="flex">
-            <div className={`mr-20 ${styles.page_sections}`}>
-              <div className={styles.page_section_item}>
-                About Me
-              </div>
-              <div className={styles.page_section_item}>
-                Resume
-              </div>
-              <div className={styles.page_section_item}>
-                Portfolios
-              </div>
-            </div>
-            <div className={styles.page_sections}>
-              <div className={styles.page_section_item}>
-                Companies Helped
-              </div>
-              <div className={styles.page_section_item}>
-                Gallery
-              </div>
-            </div>
+          <div className="flex justify-center">
+            
           </div>
         </div>
       </div>

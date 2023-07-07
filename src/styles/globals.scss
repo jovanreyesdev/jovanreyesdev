@@ -123,12 +123,16 @@ a {
   }
 }
 
+main {
+  background: #090b13;
+}
+
 .subheading {
   font-family: 'Jost';
-  @apply text-4xl xl:text-5xl text-gray-600 mb-10;
+  @apply text-4xl xl:text-5xl text-gray-400 mb-10;
 }
 
 .typography {
   font-family: "Open Sans";
-  @apply text-xl text-gray-600 mb-5;
+  @apply text-xl text-gray-400 mb-5;
 }

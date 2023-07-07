@@ -21,10 +21,8 @@ function Home() {
       <About />
       <WhyMe />
       <Resume />
-      <Recommendations />
       <Portfolios />
       <CompaniesHelped />
-      <Gallery />
       <Footer />
     </main>
   );

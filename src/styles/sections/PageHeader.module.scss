@@ -25,13 +25,17 @@
 
   .heading {
     font-family: "Montserrat", sans-serif;
-    @apply text-3xl xl:text-4xl text-gray-600 mb-5;
+    @apply text-3xl xl:text-4xl text-gray-400 mb-5;
   }
 
   .subheading {
     font-family: "Gloock";
-    max-width: 30rem;
-    @apply text-4xl xl:text-6xl text-gray-600 leading-tight mb-5;
+    max-width: 35rem;
+    background: linear-gradient(97.13deg, #E9E9E9 0%, #515151 100%);
+    background-clip: initial;
+    -webkit-background-clip: text;
+    letter-spacing: 3px;
+    @apply text-4xl xl:text-6xl text-gray-400 leading-tight mb-5;
   }
 
   .social_container {

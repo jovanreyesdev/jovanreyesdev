@@ -2,63 +2,93 @@ import React from 'react';
 
 import styles from '@/styles/sections/Resume.module.scss';
 
-function Resume() {
+const experiences = [
+  {
+    title: 'FullStack Dev',
+    company: '1800Accountant',
+    description: [
+      'Website Development & Maintenance',
+      'Design-to-Code Translation',
+      'Agile Collaboration',
+      'End-to-End, AB & Functional Testing',
+      'Team Support & Guidance',
+      'Documentation',
+    ],
+  },
+  {
+    title: 'FullStack Dev',
+    company: 'Smartgroup Enterprisee',
+    description: [
+      'Website Development & Maintenance',
+      'Design-to-Code Translation',
+      'Custom Tool Development',
+      'CI Maintenannce',
+      'Project Lifecycle Management',
+      'Functional Testing',
+      'Marketing Collaboration'
+    ],
+  },
+  {
+    title: 'Web Developer',
+    company: 'Lear Corporation Cebu',
+    description: [
+      'Web Application Development',
+      'Collaborative Solution Design',
+      'Database Maintenance',
+      'Technical Support & Troubleshooting',
+      'Functional Testing',
+    ],
+  },
+];
 
+function ExperienceBranch({
+  reverse = false,
+  title = '',
+  company = '',
+  description,
+}) {
   return (
-    <section className="container">
-      <div className="flex flex-col xl:flex-row">
-        <h2 className="subheading">Resume</h2>
-        <div className={styles.content_area}>
-          <div className={styles.experience_box}>
-            <div className={styles.exp_title}>Frontend Developer</div>
-            <div className={styles.exp_details}>
-              <div className="flex justify-between mb-5">
-                <div>
-                  <span className="font-bold">1800Accountant</span>, New York, USA
-                </div>
-                <div className="hidden xl:block">
-                  Jun 2020 - Present
-                </div>
-              </div>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.experience_box}>
-            <div className={styles.exp_title}>Full-stack Developer</div>
-            <div className={styles.exp_details}>
-              <div className="flex justify-between mb-5">
-                <div>
-                  <span className="font-bold">Smartgroup Enterprises</span>, Australia
-                </div>
-                <div className="hidden xl:block">
-                  Jan 2019 - Jun 2020
-                </div>
-              </div>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.experience_box}>
-            <div className={styles.exp_title}>Web Developer</div>
-            <div className={styles.exp_details}>
-              <div className="flex justify-between mb-5">
-                <div>
-                  <span className="font-bold">Lear Corporation</span>, Cebu
-                </div>
-                <div className="hidden xl:block">
-                  Sep 2017 - Jan 2019
-                </div>
-              </div>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-              </div>
-            </div>
-          </div>
+    <div className={`${styles.expBranch} ${reverse ? styles.reverse : ''}`}>
+      <div className={styles.title}>
+        <div className="min-w-[300px] text-3xl xl:text-4xl font-bold md:mb-5">
+          <span>{title}</span>
+        </div>
+        <div className="text-2xl">{company}</div>
+      </div>
+      <div className={styles.separator}>
+        <div className={styles.ball}>
+          <div className={styles.inner} />
+        </div>
+        <div className={styles.line} />
+      </div>
+      <div className={`${styles.details}`}>
+        <ol className="list-disc">
+          {description.map((d) => (
+            <li>{d}</li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  )
+};
+ 
+function Resume() {
+  return (
+    <section className={`${styles.resume} mb-20`}>
+      <div className="container mb-0 py-20">
+        <div className="mb-5">
+          <h2 className={`subheading text-center ${styles.subheading}`}>Resume</h2>
+        </div>
+        <div className="mb-20">
+          <p className="typography text-center">Roadmap of my work experience</p>
+        </div>
+        <div className="experience-tree">
+          {
+            experiences.map((exp, i) => (
+              <ExperienceBranch {...exp} reverse={i % 2 === 0} />
+              )
+            )
+          }
         </div>
       </div>
     </section>

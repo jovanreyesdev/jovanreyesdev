@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 349 148" width="349" height="148" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect y="0.326172" width="348" height="147" rx="15" fill="#1a8dcb"/>
+  <g>
+    <path d="M 98.249 68.852 L 98.249 93.047" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 33.094 93.046 L 33.094 54.753 C 33.094 51.992 35.38 49.706 38.143 49.706 L 90.343 49.706" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 58.718 93.046 C 58.718 94.951 60.243 95.809 62.148 95.809 L 69.101 95.809 C 71.006 95.809 72.531 94.951 72.531 93.046 L 104.156 93.046 L 104.156 96.38 C 104.156 98.381 102.537 100 100.535 100 L 30.523 100 C 28.522 100 26.903 98.381 26.903 96.38 L 26.903 93.046 L 58.718 93.046 Z" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 48.526 68.852 L 54.242 68.852" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 41.859 63.136 L 44.717 65.995 L 41.859 68.852" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 41.859 80.473 L 47.574 80.473" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 51.383 80.473 L 59.956 80.473" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 41.859 74.757 L 51.861 74.757" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 56.147 74.757 L 61.863 74.757" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 65.672 74.757 L 73.292 74.757" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 109.681 54.563 L 104.061 58.087 L 98.251 61.707 L 92.535 58.087 L 86.82 54.563 L 92.535 50.944 L 98.251 54.563 L 98.345 54.563 L 103.965 50.944 L 109.681 54.563 Z" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 104.061 58.087 L 109.681 61.707 L 98.251 68.852 L 86.82 61.707 L 92.535 58.087" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 98.249 54.563 L 98.249 54.468 L 98.345 54.563" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 92.535 50.944 L 86.82 54.563 L 92.535 58.087 L 98.251 61.707 L 104.061 58.087 L 109.681 54.563 L 103.965 50.944" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+    <path d="M 92.535 50.944 L 86.82 47.42 L 98.251 40.275 L 109.681 47.42 L 103.965 50.944 L 98.345 54.563 L 98.251 54.563 L 92.535 50.944 Z" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+  </g>
+  <g transform="matrix(-1.965395, 0, 0, 1.965395, 415.566474, -70.946351)" style="">
+    <path d="M 29.059 66.715 L 29.059 41.134" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="fill: rgb(26, 141, 203); stroke-width: 7.12325px; stroke: rgb(50, 172, 237);" transform="matrix(-0.951057, -0.30902, 0.309014, -0.951057, 40.032347, 114.189556)"/>
+    <path d="M 38.655 33.322 L 38.655 73.808 C 38.655 76.727 41.072 79.144 43.993 79.144 L 99.182 79.144" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="fill: rgb(26, 141, 203); stroke-width: 7.12325px; stroke: rgb(50, 172, 237);" transform="matrix(-0.951057, -0.30902, 0.309014, -0.951057, 117.087127, 131.010947)"/>
+    <path d="M 49.259 90.148 C 49.259 85.431 50.872 83.306 52.886 83.306 L 60.237 83.306 C 62.251 83.306 63.863 85.431 63.863 90.148 L 97.299 90.148 L 97.299 81.892 C 97.299 76.936 95.588 72.926 93.471 72.926 L 19.45 72.926 C 17.334 72.926 15.622 76.936 15.622 81.892 L 15.622 90.148 L 49.259 90.148 Z" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="fill: rgb(26, 141, 203); stroke-width: 7.12325px; stroke: rgb(50, 172, 237);" transform="matrix(-0.951057, -0.30902, 0.309014, -0.951057, 84.961596, 176.530731)"/>
+    <path d="M 37.597 27.279 L 37.597 27.379 L 37.698 27.279" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="fill: rgb(26, 141, 203); stroke-width: 7.12325px; stroke: rgb(50, 172, 237);" transform="matrix(-0.951057, -0.30902, 0.309014, -0.951057, 65.007371, 64.954251)"/>
+  </g>
+</svg>
