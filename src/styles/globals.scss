@@ -100,7 +100,7 @@ a {
 .container {
   max-width: 300px;
 
-  @apply mx-auto mb-10 xl:mb-20;
+  @apply mx-auto pb-10 xl:pb-20;
 
   @media (min-width: 640px) {
     max-width: 500px;

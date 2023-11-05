@@ -20,8 +20,7 @@ function Home() {
       <Resume />
       <Recommendations />
       <Portfolios />
-      <CompaniesHelped />
-      <Gallery />
+      {/* <CompaniesHelped /> */}
       <Footer />
     </main>
   );
