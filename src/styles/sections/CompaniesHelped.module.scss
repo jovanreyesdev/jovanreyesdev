@@ -2,9 +2,6 @@
   @apply max-w-full;
 
   .content_area {
-    min-height: 400px;
-    background: #0f121c;
-    background-image: url(/images/pattern.png);
     @apply bg-center flex items-center relative;
 
     .companies {

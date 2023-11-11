@@ -1,94 +1,108 @@
 import React from 'react';
 
+import Tag from '@/components/Tag';
 import styles from '@/styles/sections/Resume.module.scss';
 
-const experiences = [
+const EXPERIENCES = [
   {
-    title: 'FullStack Dev',
-    company: '1800Accountant',
-    description: [
-      'Website Development & Maintenance',
-      'Design-to-Code Translation',
-      'Agile Collaboration',
-      'End-to-End, AB & Functional Testing',
-      'Team Support & Guidance',
-      'Documentation',
+    title: 'Shopify Developer',
+    company: 'NEON eCommerce Packaging',
+    date: 'May 2023 - Present',
+    location: 'New York, USA',
+    details: "Remote · Full Time",
+    responsibilities: [
+      'Planning & Ideations',
+      'Development and maintenance',
+      'Automations',
+      'SEO Support',
+      'Creating code guides and documentations'
     ],
+    tags: [],
   },
   {
-    title: 'FullStack Dev',
-    company: 'Smartgroup Enterprisee',
-    description: [
-      'Website Development & Maintenance',
-      'Design-to-Code Translation',
-      'Custom Tool Development',
-      'CI Maintenannce',
-      'Project Lifecycle Management',
-      'Functional Testing',
-      'Marketing Collaboration'
+    title: 'Full-stack Developer',
+    company: '1800Accountant',
+    date: 'Jun 2020 - May 2023',
+    location: 'New York, USA',
+    details: "Remote · Full Time",
+    responsibilities: [
+      'Development and Maintenance',
+      'Keep software project up to date with latest technology trends',
+      'Participate in daily stand-up meetings',
+      'Provide guidance and support to development team members',
+      'Creating code guides and documentations',
+      'CI Maintenance'
     ],
+    tags: [],
+  },
+  {
+    title: 'Full-stack Developer',
+    company: 'Smartgroup Enterprises',
+    date: 'Jan 2019 - Jun 2020',
+    location: 'Sydney, Australia',
+    details: "Onsite · Full Time",
+    responsibilities: [
+      'Web Development and Maintenance',
+      'Automations',
+      'CI Maintenance',
+      'SEO Support'
+    ],
+    tags: [],
   },
   {
     title: 'Web Developer',
-    company: 'Lear Corporation Cebu',
-    description: [
-      'Web Application Development',
-      'Collaborative Solution Design',
-      'Database Maintenance',
-      'Technical Support & Troubleshooting',
-      'Functional Testing',
+    company: 'Lear Corporation',
+    date: 'Sep 2017 - Jan 2019',
+    location: 'MEPZ II, Cebu',
+    details: "Onsite · Contract",
+    responsibilities: [
+      'Front End Development and Maintenance',
+      'Back End Development',
+      'Technical support'
     ],
+    tags: [],
   },
-];
+]
 
-function ExperienceBranch({
-  reverse = false,
-  title = '',
-  company = '',
-  description,
-}) {
-  return (
-    <div className={`${styles.expBranch} ${reverse ? styles.reverse : ''}`}>
-      <div className={styles.title}>
-        <div className="min-w-[300px] text-3xl xl:text-4xl font-bold md:mb-5">
-          <span>{title}</span>
-        </div>
-        <div className="text-2xl">{company}</div>
-      </div>
-      <div className={styles.separator}>
-        <div className={styles.ball}>
-          <div className={styles.inner} />
-        </div>
-        <div className={styles.line} />
-      </div>
-      <div className={`${styles.details}`}>
-        <ol className="list-disc">
-          {description.map((d) => (
-            <li>{d}</li>
-          ))}
-        </ol>
-      </div>
-    </div>
-  )
-};
- 
 function Resume() {
   return (
-    <section className={`${styles.resume} mb-20`}>
-      <div className="container mb-0 py-20">
-        <div className="mb-5">
-          <h2 className={`subheading text-center ${styles.subheading}`}>Resume</h2>
-        </div>
-        <div className="mb-20">
-          <p className="typography text-center">Roadmap of my work experience</p>
-        </div>
-        <div className="experience-tree">
-          {
-            experiences.map((exp, i) => (
-              <ExperienceBranch {...exp} reverse={i % 2 === 0} />
-              )
-            )
-          }
+    <section id="resume" className={styles.resume_section}>
+      <div className="container">
+        <div className="flex flex-col xl:flex-row">
+          <h2 className="subheading">Resume</h2>
+          <div className={styles.content_area}>
+            {
+              EXPERIENCES.map((exp) => (
+                <div className={styles.experience_box}>
+                  <div className={styles.exp_title}>{exp.title}</div>
+                  <div className={styles.exp_details}>
+                    <div className="flex justify-between mb-5">
+                      <div>
+                        <span className="font-bold">{exp.company}</span>
+                      </div>
+                      <div className="hidden xl:block">
+                        <small>{exp.date}</small>
+                      </div>
+                    </div>
+                    <div>
+                      <small>{exp.details}</small>
+                    </div>
+                    <div>
+                      <ul className={styles.responsibilities}>
+                        {
+                          exp.responsibilities.map((r) => (
+                            <li>
+                              <small>{r}</small>
+                            </li>
+                          ))
+                        }
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
         </div>
       </div>
     </section>

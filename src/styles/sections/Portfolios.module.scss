@@ -1,36 +1,10 @@
 .content_area {
-  .title {
-		font-family: "Gloock";
-    max-width: 35rem;
-    background: linear-gradient(97.13deg, #E9E9E9 0%, #515151 100%);
-    background-clip: initial;
-    -webkit-background-clip: text;
-    letter-spacing: 3px;
-    z-index: 101;
-    @apply text-3xl sm:text-5xl text-gray-200 leading-tight mb-5 pl-5 sm:pl-0 text-left sm:text-right;
-	}
+  .portfolio-list {
+    @apply flex flex-wrap gap-4;
 
-  .bgCover {
-    @apply relative bg-contain bg-no-repeat py-20;
-
-    &::before {
-      background: linear-gradient(91.03deg, #0f121b -5.96%, transparent 99.41%);
-      content: "";
-      display: block;
-      inset: 0;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .bgCover {
-      background-image: url('/images/portfolios/primepay-slanted-view.png');
-      background-position: bottom left;
+    .portfolio-list--item {
+      flex: 1 0 32%;
+      @apply flex justify-center mb-8;
     }
   }
 }

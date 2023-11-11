@@ -6,41 +6,35 @@ import styles from '@/styles/sections/Footer.module.scss';
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className={`container ${styles.content_area}`}>
-        <div className="flex flex-col justify-between">
-          <div className="flex items-center justify-center">
-            <img src="/images/footer-line.png" alt="line" />
-            <div className="px-10">
-              <ReactSVG src="/images/jrdevlogo-white.svg" className={styles.logo} />
-              <div className="mb-4 text-center">
-                <div>Jovan Reyes</div>
-                <div className="text-xs italic">Software Developer</div>
-              </div>
+    <footer className={`pt-5 relative ${styles.footer}`}>
+      <div className={`container pt-10 ${styles.content_area}`}>
+        <div className="flex flex-col lg:flex-row justify-between items-center">
+          <ReactSVG src="/images/jovanportfolio-white.svg" className={styles.logo} />
+          <div className={styles.page_sections}>
+            <div className={styles.page_section_item}>
+              <a href="#about-me">About Me</a>
             </div>
-            <img src="/images/footer-line.png" alt="line" />
-          </div>
-          <div className="flex justify-center">
-            <div className={styles.social_icons}>
-              <ReactSVG src="/images/insta.svg" />
-              <ReactSVG src="/images/linkedin.svg" />
-              <ReactSVG src="/images/github.svg" />
+            <div className={styles.page_section_item}>
+              <a href="#resume">Resume</a>
+            </div>
+            <div className={styles.page_section_item}>
+              <a href="#portfolios">Portfolios</a>
+            </div>
+            <div className={styles.page_section_item}>
+              <a href="#companies-helped">Companies Helped</a>
             </div>
           </div>
-          <div className="flex justify-center">
-            
+          <div className={styles.social_icons}>
+            <ReactSVG src="/images/insta-white.svg" />
+            <ReactSVG src="/images/linkedin-white.svg" />
+            <ReactSVG src="/images/github-white.svg" />
           </div>
         </div>
       </div>
       <div className={styles.bottom}>
-        <div className={`container ${styles.container_custom}`}>
-          <div className="hidden sm:block">
-            Jovan Reyes / Personal Site
-          </div>
-          <div className="text-white">
-            © 2022 JRDev - All Rights Reserved
-          </div>
-        </div>
+          <span>
+            All Rights Reserved
+          </span>
       </div>
     </footer>
   )

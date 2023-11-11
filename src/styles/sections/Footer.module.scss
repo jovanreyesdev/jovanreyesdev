@@ -1,48 +1,49 @@
-.footer {
-  @apply text-white pt-10;
-
-  .content_area {  
-    .logo {
-      @apply mb-3;
-      div {
-        svg {
-          width: 7rem;
-          height: 2rem;
-        }
-      }
-    }
-  
-    .social_icons {
-      min-width: 8rem;
-      @apply flex mb-4 justify-between;
-  
+footer.footer {
+  background: #1b92d2;
+}
+.content_area {
+  .logo {
+    @apply mb-3;
+    div {
       svg {
-        height: 1.5rem;
-        width: 1.5rem;
-        @apply text-gray-600;
-      }
-    }
-  
-    .page_sections {
-      .page_section_item {
-        @apply mb-5;
+        width: 10rem;
+        height: auto;
       }
     }
   }
-  
-  .bottom {
-    @apply py-5 px-5 text-xs text-white;
-  
-    .container_custom {
-      @apply flex flex-col sm:flex-row justify-between mb-0;
+
+  .social_icons {
+    color: #fff;
+    max-width: 8rem;
+    gap: 2rem;
+    @apply flex justify-between;
+
+    svg {
+      color: #fff;
+      height: 1.5rem;
+      width: 1.5rem;
+      @apply text-gray-600;
     }
-  
-    .logo {
-      div {
-        svg {
-          width: 4rem;
-          height: 4rem;
-        }
+  }
+
+  .page_sections {
+    color: #fff;
+    gap: 2rem;
+
+    @apply flex flex-col md:flex-row mb-10 lg:mb-0;
+  }
+}
+
+.bottom {
+  background: rgba(0,0,0,.8);
+
+  @apply flex justify-center py-5 px-5 text-xs text-white;
+
+  .logo {
+    div {
+      svg {
+        width: 4rem;
+        height: 4rem;
       }
     }
   }
