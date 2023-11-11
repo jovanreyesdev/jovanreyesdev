@@ -31,8 +31,6 @@ function Card({
     setHovered(false);
   }
 
-  console.log(view);
-
   return (
     <div className={styles.card}>
       { thumbnailImg ? (

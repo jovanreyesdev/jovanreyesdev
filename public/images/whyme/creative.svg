@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 349 148" width="349" height="148" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="348" height="147" rx="15" fill="#1a8dcb"/>
+  <path d="M 44.342 46.136 L 36.809 46.136 L 36.809 53.111 L 44.342 53.111 L 44.342 46.136 Z" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+  <path d="M 72.595 46.136 L 65.063 46.136 L 65.063 53.111 L 72.595 53.111 L 72.595 46.136 Z" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+  <path d="M 44.342 72.29 L 36.809 72.29 L 36.809 79.264 L 44.342 79.264 L 44.342 72.29 Z" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+  <path d="M 72.595 72.29 L 65.063 72.29 L 65.063 79.264 L 72.595 79.264 L 72.595 72.29 Z" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+  <path d="M 68.83 49.623 L 40.577 49.623 L 40.577 75.777 L 68.83 75.777 L 68.83 49.623 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px;"/>
+  <path d="M 48.769 88.144 L 35.96 88.144 L 35.96 100 L 48.769 100 L 48.769 88.144 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px;"/>
+  <path d="M 61.574 88.144 L 48.769 88.144 L 48.769 100 L 61.574 100 L 61.574 88.144 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px;"/>
+  <path d="M 74.385 88.144 L 61.574 88.144 L 61.574 100 L 74.385 100 L 74.385 88.144 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px;"/>
+  <path d="M 87.192 88.144 L 74.382 88.144 L 74.382 100 L 87.192 100 L 87.192 88.144 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px;"/>
+  <path d="M 100 88.144 L 87.192 88.144 L 87.192 100 L 100 100 L 100 88.144 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px;"/>
+  <path d="M 90.358 43.52 C 92.605 43.52 94.43 45.21 94.43 47.289 L 94.43 54.086 L 86.285 54.086 L 86.285 47.289 C 86.285 45.21 88.109 43.52 90.358 43.52 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px; fill: rgb(26, 141, 203);"/>
+  <path d="M 98.965 54.086 L 81.675 54.086 L 81.675 60.083 L 98.965 60.083 L 98.965 54.086 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px;"/>
+  <path d="M 87.083 74.558 L 87.083 60.083 L 93.56 60.083 L 93.56 74.558 L 90.32 79.264 L 87.083 74.558 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px;"/>
+  <path d="M 50.514 67.343 L 54.701 58.055" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px;"/>
+  <path d="M 58.891 67.343 L 54.701 58.055" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px;"/>
+  <path d="M 51.904 64.263 L 57.501 64.263" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-width: 2px;"/>
+  <g transform="matrix(0.731354, -0.682006, 0.681991, 0.731354, 49.52163, 156.461382)">
+    <g transform="matrix(5.09269, 0, 0, 4.714209, -397.545654, -348.449677)" style="">
+      <path d="M 121.274 69.103 L 117.733 69.103 L 117.733 72.644 L 121.274 72.644 L 121.274 69.103 Z" fill="#9A9A9A" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 134.554 69.103 L 131.013 69.103 L 131.013 72.644 L 134.554 72.644 L 134.554 69.103 Z" fill="#9A9A9A" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 121.274 82.383 L 117.733 82.383 L 117.733 85.924 L 121.274 85.924 L 121.274 82.383 Z" fill="#9A9A9A" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 134.554 82.383 L 131.013 82.383 L 131.013 85.924 L 134.554 85.924 L 134.554 82.383 Z" fill="#9A9A9A" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 132.784 70.873 L 119.504 70.873 L 119.504 84.153 L 132.784 84.153 L 132.784 70.873 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 123.354 90.433 L 117.334 90.433 L 117.334 96.453 L 123.354 96.453 L 123.354 90.433 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 129.374 90.433 L 123.354 90.433 L 123.354 96.453 L 129.374 96.453 L 129.374 90.433 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 135.395 90.433 L 129.374 90.433 L 129.374 96.453 L 135.395 96.453 L 135.395 90.433 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 141.415 90.433 L 135.394 90.433 L 135.394 96.453 L 141.415 96.453 L 141.415 90.433 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 147.435 90.433 L 141.415 90.433 L 141.415 96.453 L 147.435 96.453 L 147.435 90.433 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 142.903 67.774 C 143.959 67.774 144.817 68.632 144.817 69.688 L 144.817 73.139 L 140.989 73.139 L 140.989 69.688 C 140.989 68.632 141.846 67.774 142.903 67.774 Z" fill="#161616" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 146.949 73.139 L 138.821 73.139 L 138.821 76.184 L 146.949 76.184 L 146.949 73.139 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 141.363 83.534 L 141.363 76.184 L 144.408 76.184 L 144.408 83.534 L 142.885 85.924 L 141.363 83.534 Z" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 124.175 79.871 L 126.143 75.155" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 128.112 79.871 L 126.143 75.155" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+      <path d="M 124.828 78.307 L 127.459 78.307" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2.85513px; stroke: rgb(50, 172, 237);"/>
+    </g>
+  </g>
+</svg>

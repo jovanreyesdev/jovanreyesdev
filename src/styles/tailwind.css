@@ -529,14 +529,19 @@ video {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-.pt-0 {
-  padding-top: 0px;
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
 }
 .pt-5 {
   padding-top: 1.25rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .font-bold {
   font-weight: 700;
@@ -561,15 +566,20 @@ video {
     margin-right: 1.25rem;
   }
 
-  .xl\:block {
-    display: block;
-  }
-
   .xl\:inline {
     display: inline;
   }
 
+  .xl\:min-w-\[300px\] {
+    min-width: 300px;
+  }
+
   .xl\:flex-row {
     flex-direction: row;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }

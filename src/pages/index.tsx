@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Jovandev</title>
+      <title>Jovan Reyes | Personal Site</title>
       </Head>
       <main>
         <PageHeader />
