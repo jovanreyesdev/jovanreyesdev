@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 import Card from '@/components/Card';
 import styles from '@/styles/sections/Portfolios.module.scss';

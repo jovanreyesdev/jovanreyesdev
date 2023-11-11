@@ -2,12 +2,17 @@ import React, { useEffect, useState } from 'react';
 
 import styles from '@/styles/components/Card.module.scss';
 
+interface CardProps {
+  thumbnailImg: string;
+  title: string;
+  text: string;
+}
+
 function Card({
   thumbnailImg,
   title,
-  text,
-  href,
-}) {
+  text
+} : CardProps) {
   const [view, setView] = useState(0);
   const [hovered, setHovered] = useState(false);
 
