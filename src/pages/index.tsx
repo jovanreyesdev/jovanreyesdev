@@ -3,26 +3,26 @@ import Head from "next/head";
 
 import PageHeader from "@/sections/PageHeader";
 import About from '@/sections/About';
-import WhyMe from '@/sections/WhyMe';
-import Resume from '@/sections/Resume';
 import Portfolios from '@/sections/Portfolios';
-import Recommendations from '@/sections/Recommendations';
+import Resume from '@/sections/Resume';
 import CompaniesHelped from '@/sections/CompaniesHelped';
-import Gallery from '@/sections/Gallery';
 import Footer from '@/sections/Footer';
 
 function Home() {
   return (
-    <main>
-      <PageHeader />
-      <About />
-      <WhyMe />
-      <Resume />
-      <Recommendations />
-      <Portfolios />
-      {/* <CompaniesHelped /> */}
-      <Footer />
-    </main>
+    <>
+      <Head>
+        <title>Jovandev</title>
+      </Head>
+      <main>
+        <PageHeader />
+        <About />
+        <Portfolios />
+        <Resume />
+        <CompaniesHelped />
+        <Footer />
+      </main>
+    </>
   );
 }
 

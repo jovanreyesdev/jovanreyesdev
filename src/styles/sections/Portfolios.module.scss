@@ -1,36 +1,10 @@
 .content_area {
-  .portfolio_list {
-    .portfolio_item {
-      @apply text-gray-600;
+  .portfolio-list {
+    @apply flex flex-wrap gap-4;
 
-      &:not(:first-child) {
-        @apply pt-10 xl:pt-20;
-      }
-
-      &:not(:last-child) {
-        @apply border-b border-gray-300;
-      }
-
-      @apply flex flex-col xl:flex-row pb-20;
-  
-      .portfolio_details {
-        @apply text-xl xl:ml-20;
-  
-        .portfolio_title {
-          @apply font-bold text-2xl xl:text-3xl mb-5 mt-10 xl:mt-0;
-        }
-        .date_n_genre {
-          @apply flex;
-  
-          .date {
-            background: #1a8dcb;
-            @apply mr-5 rounded-full text-white px-3 mb-5;
-          }
-        }
-        .description {
-  
-        }
-      }
+    .portfolio-list--item {
+      flex: 1 0 32%;
+      @apply flex justify-center mb-8;
     }
   }
 }

@@ -1,6 +1,12 @@
+section.resume_section {
+}
 .content_area {
   max-width: 655px;
   @apply xl:ml-auto w-full;
+
+  .responsibilities {
+    @apply list-disc pl-8;
+  }
 
   .experience_box {
     @apply flex flex-col 2xl:flex-row text-gray-600;

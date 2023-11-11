@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from 'next/link';
 import { ReactSVG } from "react-svg";
 
 import Button from "@/components/Button";
@@ -13,11 +14,15 @@ function PageHeader() {
         <ReactSVG src="/images/jrdev.svg" className={styles.background_brand} />
         <h1 className={styles.heading}>Hello! I am Jovan</h1>
         <h2 className={styles.subheading}>
-          Professional UI/UX Designer & Web Developer
+          Code Artisan : Crafting Digital Experiences
         </h2>
         <div className="flex flex-col xl:flex-row">
-          <Button className={`${styles.cta} mb-10 xl:mb-0 xl:mr-5`}>Contact Me</Button>
-          <Button className={`${styles.cta} hidden xl:inline`} variant="secondary">Get to know more</Button>
+          <Link href="mailto:jovan.reyes.dev@gmail.com">
+            <Button className={`${styles.cta} mb-10 xl:mb-0 xl:mr-5`}>Contact Me</Button>
+          </Link>
+          <a href="#about-me">
+            <Button className={`${styles.cta} hidden xl:inline`} variant="secondary">Get to know more</Button>
+          </a>
         </div>
       </div>
       <div className={styles.header_content_right}>

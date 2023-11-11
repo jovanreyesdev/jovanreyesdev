@@ -1,0 +1,21 @@
+.card {
+    @apply w-80 shadow;
+
+    .card--thumbnail-img {
+        min-height: 200px;
+        transition: background-position 0.2s linear;
+        @apply bg-cover bg-no-repeat rounded;
+    }
+
+    .card--body {
+        @apply px-5 py-4;
+
+        .card--title {
+            @apply font-bold text-gray-600 mb-2;
+        }
+
+        .card--text {
+            @apply text-xs text-gray-400;
+        }
+    }
+}

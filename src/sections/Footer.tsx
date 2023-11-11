@@ -12,19 +12,16 @@ function Footer() {
           <ReactSVG src="/images/jovanportfolio-white.svg" className={styles.logo} />
           <div className={styles.page_sections}>
             <div className={styles.page_section_item}>
-              About Me
+              <a href="#about-me">About Me</a>
             </div>
             <div className={styles.page_section_item}>
-              Resume
+              <a href="#resume">Resume</a>
             </div>
             <div className={styles.page_section_item}>
-              Portfolios
+              <a href="#portfolios">Portfolios</a>
             </div>
             <div className={styles.page_section_item}>
-              Companies Helped
-            </div>
-            <div className={styles.page_section_item}>
-              Gallery
+              <a href="#companies-helped">Companies Helped</a>
             </div>
           </div>
           <div className={styles.social_icons}>
